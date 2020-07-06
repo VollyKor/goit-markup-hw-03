@@ -1,12 +1,13 @@
 /* raleway-700 - latin */
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Raleway Bold'), local('Raleway-Bold'),
-       url('../fonts/raleway-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Raleway Bold"), local("Raleway-Bold"),
+    url("../fonts/raleway-v16-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* 
@@ -21,6 +22,11 @@ font-weight: 700;
 font-weight: 900;
 */
 
+/*
+ область данных 1200px,
+ крайние отступы 15px
+ */
+
 :root {
   --primary-black-color: #212121;
   --secondary-black-color: #000000;
@@ -33,14 +39,12 @@ font-weight: 900;
 }
 /* Common styles */
 
-
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
-*::before
-*::after {
+*::before *::after {
   box-sizing: inherit;
 }
 
@@ -62,6 +66,8 @@ address {
 }
 
 ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
   list-style: none;
 }
 
@@ -74,13 +80,27 @@ a {
 /* index.html */
 
 /* Header */
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: tomato solid 2px;
+}
 
 .header-logo {
+  display: block;
+
+  padding-top: 23px;
+  padding-bottom: 25px;
+  margin-right: 85px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  
+
   color: var(--secondary-black-color);
 }
 
@@ -97,7 +117,20 @@ a {
   color: var(--secondary-color);
 }
 
+.nav-list {
+  outline: teal solid 2px;
+}
+
+/* .nav-list:not(:last-child) > li{
+  margin-right: 50px;
+} */
+
 .nav-link {
+display: block;
+
+  padding-top: 31px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,6 +139,8 @@ a {
 
   color: var(--primary-black-color);
 }
+
+
 
 .nav-link:hover,
 .nav-link:focus {
@@ -192,7 +227,7 @@ a {
   font-size: 16px;
   line-height: 1.19;
 
-text-align: center;
+  text-align: center;
 }
 
 .dev-proffesion {
@@ -200,7 +235,7 @@ text-align: center;
   line-height: 1.19;
 
   text-align: center;
-  }
+}
 
 /* footer */
 .footer-background {
@@ -283,7 +318,7 @@ text-align: center;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 2.0;
+  line-height: 2;
 
   letter-spacing: 0.06em;
 }
