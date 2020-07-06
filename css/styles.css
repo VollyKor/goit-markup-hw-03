@@ -1,0 +1,282 @@
+/* 
+Шрифты
+font-family: Raleway;
+font-weight: 700;
+
+font-family: Roboto;
+font-weight: 400;
+font-weight: 500;
+font-weight: 700;
+font-weight: 900;
+*/
+
+:root {
+  --primary-black-color: #212121;
+  --secondary-black-color: #000000;
+  --secondary-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: rgb(255, 255, 255, 0.6);
+  --grey-color: #757575;
+  --background-color: #f5f4fa;
+  --secondary-background-color: #2f303a;
+}
+/* Common styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--grey-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+button,
+address {
+  font-family: inherit;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+/* index.html */
+
+/* Header */
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  
+  color: var(--secondary-black-color);
+}
+
+.header-logo > span {
+  color: var(--secondary-color);
+}
+
+.nav {
+  color: var(--primary-black-color);
+}
+
+.nav:hover,
+.nav:focus {
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+
+  color: var(--primary-black-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-color);
+}
+
+.header-address {
+  color: var(--grey-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+}
+
+.header-address:hover,
+.header-address:focus {
+  color: var(--secondary-color);
+}
+
+/* Main */
+
+.title-hero {
+  color: var(--primary-white-color);
+  background-color: black;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-order {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+}
+
+.section-title {
+  color: var(--primary-black-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+
+  text-align: center;
+}
+
+.features-subtitle {
+  color: var(--primary-black-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+
+.features-link {
+  background-color: grey;
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dev-name {
+  color: var(--primary-black-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+text-align: center;
+}
+
+.dev-proffesion {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  }
+
+/* footer */
+.footer-background {
+  background-color: var(--secondary-background-color);
+}
+
+.footer-city {
+  color: var(--primary-white-color);
+}
+
+.footer-address {
+  color: var(--secondary-white-color);
+}
+
+.footer-city:hover,
+.footer-city:focus,
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--secondary-color);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--primary-white-color);
+}
+
+.footer-logo > span {
+  color: var(--secondary-color);
+}
+
+.footer-subtitle {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.sign-button {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Portfolio.html */
+/* Футер и хедер общие */
+/* Main */
+
+.gallery-button {
+  color: var(--primary-black-color);
+  background-color: var(--background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+}
+
+/* Добавить всплывающий текст при событии :hover, :focus  */
+.gallery-button:hover,
+.gallery-button:focus,
+.gallery-button:active {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+}
+
+.gallery-title {
+  color: var(--primary-black-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.0;
+
+  letter-spacing: 0.06em;
+}
+
+.gallery-subtitle {
+  color: var(--grey-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.gallery-desc {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+
+  font-size: 18px;
+  line-height: 1.56;
+}
