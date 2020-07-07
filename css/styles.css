@@ -59,6 +59,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 button,
 address {
   font-family: inherit;
@@ -69,6 +76,7 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
   list-style: none;
+  padding: 0px;
 }
 
 a {
@@ -80,13 +88,18 @@ a {
 /* index.html */
 
 /* Header */
+
 .container {
   width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: tomato solid 2px;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -109,6 +122,8 @@ a {
 }
 
 .nav {
+  display: flex;
+
   color: var(--primary-black-color);
 }
 
@@ -118,15 +133,16 @@ a {
 }
 
 .nav-list {
-  outline: teal solid 2px;
+  display: flex;
 }
 
-/* .nav-list:not(:last-child) > li{
+.nav-list > li:not(:last-child) {
+  display: flex;
   margin-right: 50px;
-} */
+}
 
 .nav-link {
-display: block;
+  display: block;
 
   padding-top: 31px;
   padding-bottom: 32px;
@@ -134,57 +150,86 @@ display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.02em;
 
   color: var(--primary-black-color);
 }
 
-
+address {
+  margin-left: auto;
+}
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--secondary-color);
 }
 
-.header-address {
+.address-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-list > li + li {
+  margin-left: 30px;
+}
+
+.address-item {
+  display: block;
   color: var(--grey-color);
+  padding-top: 31px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.02em;
 }
 
-.header-address:hover,
-.header-address:focus {
+.address-item:hover,
+.address-item:focus {
   color: var(--secondary-color);
 }
 
 /* Main */
 
-.title-hero {
+.hero {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: grey;
+
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
-  background-color: black;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button-order {
+  padding: 10px 52px;
+  margin-bottom: 100px;
+
   color: var(--primary-white-color);
   background-color: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.06em;
 }
 

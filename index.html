@@ -17,7 +17,7 @@
 
   <body>
     <!-- Шапка -->
-    <header class="container">
+    <header class="container flex-box">
       <nav class="nav">
         <a href="./index.html" class="header-logo" aria-label="Логотип">
           <span>
@@ -37,10 +37,10 @@
           </li>
         </ul>
       </nav>
-      <address>
-        <ul>
+      <address class="flex-box">
+        <ul class="address-list">
           <li>
-            <a class="header-address" href="mailto:info@devstudio.com">
+            <a class="address-item" href="mailto:info@devstudio.com">
               <img
                 src="./images/icon-mail.svg"
                 alt="icon mail"
@@ -51,7 +51,7 @@
             </a>
           </li>
           <li>
-            <a class="header-address" href="tel:+380961111111">
+            <a class="address-item" href="tel:+380961111111">
               <img
                 src="./images/icon-smartphone.svg"
                 alt="icon smartphone"
@@ -68,8 +68,8 @@
     <!-- Мейн -->
     <main>
       <!-- Герой -->
-      <section>
-        <h1 class="title-hero">
+      <section class="hero">
+        <h1 class="hero-title">
           Эффективные решения
           <br />
           для вашего бизнеса
@@ -80,7 +80,7 @@
       </section>
 
       <!-- Особенности -->
-      <section>
+      <section class="container">
         <h2 class="features-title" hidden>Особенности</h2>
         <ul>
           <li>
