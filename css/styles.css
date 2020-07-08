@@ -36,7 +36,8 @@ font-weight: 900;
   --grey-color: #757575;
   --background-color: #f5f4fa;
   --secondary-background-color: #2f303a;
-}
+  --background-description-color: rgba(47, 48, 58, 0.8);
+} 
 /* Common styles */
 
 html {
@@ -86,9 +87,18 @@ a {
   text-decoration: none;
 }
 
+.standart-paddings{
+  padding-top: 94px;
+  padding-bottom: 94px;
+ }
+
 /* index.html */
 
 /* Header */
+
+.flex-box{
+  display: flex;
+}
 
 .container {
   width: 1230px;
@@ -96,11 +106,6 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.flex-box {
-  display: flex;
-  align-items: center;
 }
 
 .header-logo {
@@ -168,7 +173,7 @@ address {
 .address-list {
   display: flex;
   margin-left: auto;
-  align-items: center;
+  align-items: baseline; 
 }
 
 .address-list > li + li {
@@ -246,7 +251,10 @@ address {
 }
 
 .features {
-  padding: 94px 30px;
+  display: flex;
+  padding-bottom: 94px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .features-title {
@@ -309,19 +317,18 @@ address {
 .specialization-list > li + li {
   margin-left: 30px;
 }
-.specialization-link {
+.specialization-link,
+.team a {
+  font-size: 0px;
   display: block;
 }
 
-.specialization-link > a {
-  margin-top: -30px;
-}
-
 .spec-desc {
-  background-color: rgba(47, 48, 58, 0.8);
+  
   width: 370px;
   height: 70px;
-
+  padding-top: 27px;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -329,6 +336,15 @@ address {
   text-transform: uppercase;
 
   color: #ffffff;
+  background-color: var(--background-description-color);
+}
+
+.team{
+  background-color: var(--background-color)
+}
+
+.team > h2{
+  padding-bottom: 50px;
 }
 
 .dev-name {
