@@ -168,6 +168,7 @@ address {
 .address-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .address-list > li + li {
@@ -234,13 +235,13 @@ address {
   letter-spacing: 0.06em;
 }
 
-.section-title {
+.section-title,
+.specialization-title {
   color: var(--primary-black-color);
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
-
+  line-height: 1.17;
   text-align: center;
 }
 
@@ -298,6 +299,13 @@ address {
   text-transform: uppercase;
 }
 
+.specialization-title {
+  margin-bottom: 50px;
+}
+
+.specialization-list {
+  display: flex;
+}
 .dev-name {
   color: var(--primary-black-color);
 
