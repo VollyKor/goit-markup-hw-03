@@ -61,7 +61,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -243,7 +244,39 @@ address {
   text-align: center;
 }
 
+.features {
+  padding: 94px 30px;
+}
+
+.features-title {
+  display: none;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-img {
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.features-img > img {
+  padding: 25px 100px;
+}
+
 .features-subtitle {
+  margin-bottom: 10px;
+
   color: var(--primary-black-color);
 
   font-weight: 700;
