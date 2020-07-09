@@ -37,7 +37,7 @@ font-weight: 900;
   --background-color: #f5f4fa;
   --secondary-background-color: #2f303a;
   --background-description-color: rgba(47, 48, 58, 0.8);
-} 
+}
 /* Common styles */
 
 html {
@@ -87,16 +87,16 @@ a {
   text-decoration: none;
 }
 
-.standart-paddings{
+.standart-paddings {
   padding-top: 94px;
   padding-bottom: 94px;
- }
+}
 
 /* index.html */
 
 /* Header */
 
-.flex-box{
+.flex-box {
   display: flex;
 }
 
@@ -173,7 +173,7 @@ address {
 .address-list {
   display: flex;
   margin-left: auto;
-  align-items: baseline; 
+  align-items: baseline;
 }
 
 .address-list > li + li {
@@ -324,11 +324,10 @@ address {
 }
 
 .spec-desc {
-  
   width: 370px;
   height: 70px;
   padding-top: 27px;
-  
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -339,15 +338,31 @@ address {
   background-color: var(--background-description-color);
 }
 
-.team{
-  background-color: var(--background-color)
+section.team {
+  background-color: var(--background-color);
 }
 
-.team > h2{
+.team-box > h2 {
   padding-bottom: 50px;
 }
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 
-.dev-name {
+.team-card {
+  width: 270px;
+  height: 422px;
+  left: 215px;
+  top: 1785px;
+
+  background-color: var(--primary-white-color);
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
   color: var(--primary-black-color);
 
   font-weight: 500;
