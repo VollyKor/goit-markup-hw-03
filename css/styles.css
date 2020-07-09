@@ -377,15 +377,21 @@ section.team {
 }
 
 .team-proffesion {
+  padding-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
-
   text-align: center;
 }
 
 .bio-list {
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.bio-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .bio-link {
