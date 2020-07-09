@@ -242,6 +242,8 @@ address {
 
 .section-title,
 .specialization-title {
+margin-bottom: 50px;
+
   color: var(--primary-black-color);
 
   font-weight: 700;
@@ -342,9 +344,6 @@ section.team {
   background-color: var(--background-color);
 }
 
-.team-box > h2 {
-  padding-bottom: 50px;
-}
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
@@ -406,6 +405,12 @@ section.team {
 .bio-link:not(:last-child) {
   margin-right: 10px;
 }
+
+/* Постоянные клиенты */
+
+/* .client */
+
+
 /* footer */
 .footer-background {
   background-color: var(--secondary-background-color);
