@@ -37,6 +37,7 @@ font-weight: 900;
   --background-color: #f5f4fa;
   --secondary-background-color: #2f303a;
   --background-description-color: rgba(47, 48, 58, 0.8);
+  --border-color: #AFB1B8;
 }
 /* Common styles */
 
@@ -87,7 +88,7 @@ a {
   text-decoration: none;
 }
 
-.standart-paddings {
+.vertical-paddings {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -240,6 +241,8 @@ address {
   letter-spacing: 0.06em;
 }
 
+/* Features */
+
 .section-title,
 .specialization-title {
 margin-bottom: 50px;
@@ -309,6 +312,8 @@ margin-bottom: 50px;
   text-transform: uppercase;
 }
 
+/* Чем мы занимаемся */
+
 .specialization-title {
   margin-bottom: 50px;
 }
@@ -339,7 +344,7 @@ margin-bottom: 50px;
   color: #ffffff;
   background-color: var(--background-description-color);
 }
-
+/* Наша команда */
 section.team {
   background-color: var(--background-color);
 }
@@ -410,28 +415,36 @@ section.team {
 
 /* .client */
 
+.client-item {
+  
+  display: flex;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item:not(:last-child){
+  margin-right: 30px;
+}
 
 /* footer */
 .footer-background {
   background-color: var(--secondary-background-color);
 }
 
-.footer-city {
-  color: var(--primary-white-color);
-}
-
-.footer-address {
-  color: var(--secondary-white-color);
-}
-
-.footer-city:hover,
-.footer-city:focus,
-.footer-address:hover,
-.footer-address:focus {
-  color: var(--secondary-color);
+footer > .container {
+padding: 60px 0px;
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -441,6 +454,28 @@ section.team {
 }
 
 .footer-logo > span {
+  color: var(--secondary-color);
+}
+
+.footer-city {
+  color: var(--primary-white-color);
+}
+
+.footer-mail,
+.footer-phone {
+  color: var(--secondary-white-color);
+}
+
+.footer-address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-city:hover,
+.footer-city:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phone:hover,
+.footer-phone:focus {
   color: var(--secondary-color);
 }
 

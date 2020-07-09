@@ -80,7 +80,7 @@
       </section>
 
       <!-- Особенности -->
-      <div class="container standart-paddings" >
+      <div class="container vertical-paddings" >
       <section class="features">
         <h2 class="features-title">Особенности</h2>
         <ul class="flex-box">
@@ -170,7 +170,7 @@
       </div>
 
       <!-- Наша команда -->
-      <section class="team standart-paddings">
+      <section class="team vertical-paddings">
         <div class="team-box container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list flex-box">
@@ -398,7 +398,7 @@
       </section>
 
       <!-- Постоянные клиенты -->
-      <section class="clients container standart-paddings" >
+      <section class="clients container vertical-paddings" >
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="clients-list flex-box">
           <li class="client-item">
@@ -411,15 +411,16 @@
             />
             </a>
           </li>
-          <li>
-            <img 
+          <li class="client-item">
+            <a href="" class="client-link">
+              <img 
               src="./images/logo-2.svg" 
               alt="Рамки" 
               width="40" 
               height="52" 
             />
           </li>
-          <li>
+          <li class="client-item">
             <a href="" class="client-link">
               <img
               src="./images/logo-3.svg"
@@ -429,7 +430,7 @@
             />
             </a>
           </li>
-          <li>
+          <li class="client-item">
             <a href="" class="client-link">
               <img
               src="./images/logo-4.svg"
@@ -439,7 +440,7 @@
             />
             </a>
           </li>
-          <li>
+          <li class="client-item">
             <a href="" class="client-link">
               <img 
                 src="./images/logo-5.svg" 
@@ -449,7 +450,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="client-item">
             <a href="" class="client-link">
               <img
                 src="./images/logo-6.svg"
@@ -466,8 +467,10 @@
 
     <!-- клас футера сменить при стилизации блока -->
     <footer class="footer-background">
+      <div class="container flex-box">
+
       <!-- контакты -->
-      <div>
+      <div class="footer-contacts">
         <a
           class="footer-logo"
           href="./index.html"
@@ -476,8 +479,8 @@
           <span>Web</span>
           Studio
         </a>
-        <address>
-          <ul>
+        <address class="footer-address">
+          <ul >
             <li>
               <a
                 class="footer-city"
@@ -488,20 +491,21 @@
               </a>
             </li>
             <li>
-              <a class="footer-address" href="mailto:info@example.com"
+              <a class="footer-mail" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a class="footer-address" href="tel:+380991111111"
+              <a class="footer-phone" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
           </ul>
         </address>
       </div>
+
       <!-- Соц. ссылки -->
-      <div>
+      <div class="social-links">
         <p>
           <b class="footer-subtitle">Присоединяйтесь</b>
         </p>
@@ -548,14 +552,16 @@
           </li>
         </ul>
       </div>
+
       <!-- Форма подпишись -->
-      <div>
+      <div class="form-subscribe">
         <p>
           <b class="footer-subtitle">Подпишитесь на рассылку</b>
           <!-- какаято форма-->
           <button class="sign-button" type="button">Подписаться</button>
         </p>
       </div>
+    </div>
       <!-- Форму "Подписывайся" сказали не трогать" -->
     </footer>
   </body>
