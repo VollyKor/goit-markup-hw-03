@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Шапка с главной страницы -->
-    <header>
+    <header class="flex-box container">
       <nav class="nav">
         <a href="./index.html" class="header-logo" aria-label="Логотип">
           <span>
@@ -36,10 +36,10 @@
           </li>
         </ul>
       </nav>
-      <address>
-        <ul>
+      <address class="flex-box">
+        <ul class="address-list">
           <li>
-            <a class="header-address" href="mailto:info@devstudio.com">
+            <a class="address-item" href="mailto:info@devstudio.com">
               <img
                 src="./images/icon-mail.svg"
                 alt="icon mail"
@@ -50,7 +50,7 @@
             </a>
           </li>
           <li>
-            <a class="header-address" href="tel:+380961111111">
+            <a class="address-item" href="tel:+380961111111">
               <img
                 src="./images/icon-smartphone.svg"
                 alt="icon smartphone"
@@ -64,11 +64,12 @@
       </address>
     </header>
     <!-- Основной раздел -->
-    <main>
+    <main class="container flex-box vertical-paddings">
       <h1 hidden>Portfolio</h1>
-      <section class="gallery">
-        <h1 hidden>Галерея</h1>
-        <ul>
+      <section class="gallery container">
+        <div class="container">
+          <h1 hidden>Галерея</h1>
+        <ul class="gallery-selection flex-box">
           <li>
             <button class="gallery-button" type="button">
               Все
@@ -95,13 +96,14 @@
             </button>
           </li>
         </ul>
+        </div>
         <!-- Добавить осутствующий в макете текст!!!-->
-        <ul>
-          <li>
+        <ul class="gallery-list flex-box">
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/technocrack.jpg"
-                alt="Иконка сайта компании Технокряк"
+                alt="Иконка компании Технокряк"
                 width="370"
                 height="294"
               />
@@ -115,7 +117,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/new-orlean-vs-golden-star.jpg"
@@ -136,7 +138,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/seafood.jpg"
@@ -157,7 +159,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/project-prime.jpg"
@@ -178,7 +180,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/project-boxes.jpg"
@@ -199,7 +201,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <!-- картинка с основной страницы -->
               <img
@@ -220,7 +222,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/magazine-limited-edition.jpg"
@@ -241,7 +243,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <img
                 src="./images/project-lab.jpg"
@@ -262,7 +264,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="gallery-item">
             <a href="">
               <!-- картинка с основной страницы -->
               <img
@@ -287,8 +289,10 @@
     <!-- футер с главной страницы -->
     <!-- клас футера сменить при стилизации блока -->
     <footer class="footer-background">
+      <div class="container flex-box">
+
       <!-- контакты -->
-      <div>
+      <div class="footer-contacts">
         <a
           class="footer-logo"
           href="./index.html"
@@ -297,8 +301,8 @@
           <span>Web</span>
           Studio
         </a>
-        <address>
-          <ul>
+        <address class="footer-address">
+          <ul >
             <li>
               <a
                 class="footer-city"
@@ -309,58 +313,59 @@
               </a>
             </li>
             <li>
-              <a class="footer-address" href="mailto:info@example.com"
+              <a class="footer-mail" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a class="footer-address" href="tel:+380991111111"
+              <a class="footer-phone" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
           </ul>
         </address>
       </div>
+
       <!-- Соц. ссылки -->
-      <div>
+      <div class="footer-social">
         <p>
           <b class="footer-subtitle">Присоединяйтесь</b>
         </p>
-        <ul>
-          <li>
-            <a href="">
+        <ul class="flex-box">
+          <li class="social-item">
+            <a class="social-link" href="">
               <img
-                src="./images/icon-instagram.svg"
+                src="./images/icon-instagram-white.svg"
                 alt="иконка Инстаграм "
                 width="20"
                 height="20"
               />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="social-item">
+            <a class="social-link" href="">
               <img
-                src="./images/icon-twitter.svg"
+                src="./images/icon-twitter-white.svg"
                 alt="иконка Твиттера"
                 width="20"
                 height="20"
               />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="social-item">
+            <a class="social-link" href="">
               <img
-                src="./images/icon-facebook.svg"
+                src="./images/icon-facebook-white.svg"
                 alt="иконка Фейсбука"
                 width="20"
                 height="20"
               />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="social-item">
+            <a  class="social-link" href="">
               <img
-                src="./images/icon-linkedin.svg"
+                src="./images/icon-linkedin-white.svg"
                 alt="иконка Ликедина"
                 width="20"
                 height="20"
@@ -369,14 +374,16 @@
           </li>
         </ul>
       </div>
+
       <!-- Форма подпишись -->
-      <div>
+      <div class="form-subscribe">
         <p>
           <b class="footer-subtitle">Подпишитесь на рассылку</b>
           <!-- какаято форма-->
           <button class="sign-button" type="button">Подписаться</button>
         </p>
       </div>
+    </div>
       <!-- Форму "Подписывайся" сказали не трогать" -->
     </footer>
   </body>
