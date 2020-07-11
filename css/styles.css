@@ -578,6 +578,10 @@ padding: 60px 0px;
   margin-bottom: 30px;
 
   border: 1px solid #EEEEEE;
+}
+
+.gallery-item:hover,
+.gallery-item-focus{
   box-shadow: 
     1px 4px 6px rgba(0, 0, 0, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06), 
