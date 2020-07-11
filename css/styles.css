@@ -37,7 +37,8 @@ font-weight: 900;
   --background-color: #f5f4fa;
   --secondary-background-color: #2f303a;
   --background-description-color: rgba(47, 48, 58, 0.8);
-  --border-color: #AFB1B8;
+  --client-border-color: #AFB1B8;
+  --header-border-color: #ECECEC;
 }
 /* Common styles */
 
@@ -83,7 +84,7 @@ ul {
 }
 
 a {
-  color: #000;
+  /* color: #000; */
   font-family: inherit;
   text-decoration: none;
 }
@@ -102,7 +103,7 @@ a {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -344,7 +345,9 @@ margin-bottom: 50px;
   color: #ffffff;
   background-color: var(--background-description-color);
 }
+
 /* Наша команда */
+
 section.team {
   background-color: var(--background-color);
 }
@@ -414,13 +417,6 @@ section.team {
 
 /* Постоянные клиенты */
 
-/* .client */
-
-.client-item {
-  
- 
-}
-
 .client-item:not(:last-child){
   margin-right: 30px;
 }
@@ -430,7 +426,7 @@ section.team {
   width: 170px;
   height: 90px;
 
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--client-border-color);
   border-radius: 4px;
   
   justify-content: center;
@@ -438,6 +434,7 @@ section.team {
 }
 
 /* footer */
+
 .footer-background {
   background-color: var(--secondary-background-color);
 }
@@ -543,7 +540,9 @@ padding: 60px 0px;
 /* Portfolio.html */
 /* Футер и хедер общие */
 /* Main */
-
+.border-buttom{
+  border-bottom: 1px solid var(--header-border-color); 
+}
 .gallery-button {
   padding: 6px 12px;
   border: 0px;
@@ -568,11 +567,33 @@ padding: 60px 0px;
 }
 
 .gallery-list{
+  width: 1230px;
   flex-wrap: wrap;
+  }
+
+.gallery-item {
+  /* width: 370px; */
+  width: calc(( 100% - 120px ) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  border: 1px solid #EEEEEE;
+  box-shadow: 
+    1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.gallery-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+.gallery-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.gallery-item:nth-last-child(-n + 3){
+  margin-bottom: 0px;
+}
+
+.gallery-desc {
+  margin: 20px 24px;
 }
 
 /* Добавить всплывающий текст при событии :hover, :focus  */
@@ -584,12 +605,13 @@ padding: 60px 0px;
 }
 
 .gallery-title {
+margin-bottom: 4px;
+
   color: var(--primary-black-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
 }
 
@@ -600,7 +622,7 @@ padding: 60px 0px;
   line-height: 1.87;
 }
 
-.gallery-desc {
+.gallery-text {
   color: var(--primary-white-color);
   background-color: var(--secondary-color);
 
