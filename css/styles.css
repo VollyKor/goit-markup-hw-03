@@ -142,6 +142,8 @@ a {
 
 .nav-list {
   display: flex;
+  padding-top: 31px;
+  padding-bottom: 32px;
 }
 
 .nav-list > li:not(:last-child) {
@@ -152,8 +154,7 @@ a {
 .nav-link {
   display: block;
 
-  padding-top: 31px;
-  padding-bottom: 32px;
+
 
   font-weight: 500;
   font-size: 14px;
@@ -180,13 +181,14 @@ address {
 
 .address-list > li + li {
   margin-left: 30px;
+  padding-top: 31px;
+  padding-bottom: 32px;
 }
 
 .address-item {
   display: block;
   color: var(--grey-color);
-  padding-top: 31px;
-  padding-bottom: 32px;
+
 
   font-weight: 500;
   font-size: 14px;
@@ -258,9 +260,7 @@ margin-bottom: 50px;
 
 .features {
   display: flex;
-  padding-bottom: 94px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 94px;
 }
 
 .features-title {
@@ -333,8 +333,8 @@ margin-bottom: 50px;
 
 .spec-desc {
   width: 370px;
-  height: 70px;
   padding-top: 27px;
+  padding-bottom: 27px;
 
   font-weight: 700;
   font-size: 14px;
@@ -368,13 +368,19 @@ section.team {
 }
 
 .team-bio {
+  padding-top: 30px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
 }
 
+
 .team-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  
+  margin-bottom: 10px;
 }
 
 .team-name {
@@ -390,17 +396,11 @@ section.team {
 }
 
 .team-proffesion {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.bio-list {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 24px;
 }
 
 .bio-item:not(:last-child) {
@@ -567,18 +567,15 @@ padding: 60px 0px;
 }
 
 .gallery-list{
-  width: 1230px;
   flex-wrap: wrap;
   }
 
 .gallery-item {
   /* width: 370px; */
-  width: calc(( 100% - 120px ) / 3);
+  width: calc(( 100% - 60px ) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #EEEEEE;
-}
+  }
 
 .gallery-item:hover,
 .gallery-item-focus{
@@ -596,8 +593,14 @@ padding: 60px 0px;
   margin-bottom: 0px;
 }
 
+.gallery-item a {
+  display: block;
+  font-size: 0px;
+}
+
 .gallery-desc {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
 }
 
 /* Добавить всплывающий текст при событии :hover, :focus  */
@@ -609,7 +612,7 @@ padding: 60px 0px;
 }
 
 .gallery-title {
-margin-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--primary-black-color);
 
